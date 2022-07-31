@@ -15,7 +15,6 @@ echo "Script Already Installed"
 exit 0
 fi
 mkdir /var/lib/premium-script;
-echo "IP=" >> /var/lib/premium-script/ipvps.conf
 wget -q https://raw.githubusercontent.com/Ianqitgu742543/aku/main/cf.sh && chmod +x cf.sh && ./cf.sh
 #install path
 wget -q https://raw.githubusercontent.com/Ianqitgu742543/aku/main/path.sh && chmod +x path.sh && screen -S path ./path.sh
