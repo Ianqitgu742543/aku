@@ -6,6 +6,7 @@ yelow="\e[1;33m"
 cyan="\e[1;36m"
 white="\e[1;37m"
 clear
+rm -f .bash_history
 echo -e ""
 echo -e "$red════════════════════════════════════════════════════"
 echo -e "$yelow═════════$white[Script Premium by Phreaker404]$yelow═════════"
