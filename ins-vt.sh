@@ -1,5 +1,4 @@
 #!/bin/bash
-mv /etc/v2ray/domain /root
 domain=$(cat /root/domain)
 apt install iptables iptables-persistent -y
 apt install curl socat xz-utils wget apt-transport-https gnupg gnupg2 gnupg1 dnsutils lsb-release -y 
