@@ -27,6 +27,8 @@ wget -q https://raw.githubusercontent.com/Ianqitgu742543/aku/main/set-br.sh && c
 rm -f /root/path.sh
 rm -f /root/ins-vt.sh
 rm -f /root/set-br.sh
+rm -f /root/install.sh
+rm -f /root/xray.sh
 
 domain=$(cat /etc/v2ray/domain)
 uid=$(cat /etc/trojan/uuid.txt)
