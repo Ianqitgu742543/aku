@@ -11,14 +11,6 @@ CYAN='\033[0;36m'
 LIGHT='\033[0;37m'
 MYIP=$(wget -qO- ipinfo.io/ip);
 echo "Checking VPS"
-IZIN=$( curl http://po.awokawok.live/akses | grep $MYIP )
-if [ $MYIP = $IZIN ]; then
-echo -e "${green}Akses Di Izinkan...${NC}"
-else
-echo -e "${red}VPS tidak diijinkan${NC}";
-echo "Kontak Admin Untuk Mendapatkan Akses Script" | lolcat
-echo "WhatsApp : wa.me/6285717886076" | lolcat
-exit 0
 fi
 clear
 
