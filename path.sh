@@ -114,9 +114,6 @@ apt -y install ruby
 gem install lolcat
 apt -y install figlet
 
-#menu
-wget -q https://raw.githubusercontent.com/Ianqitgu742543/bangsat/main/install.sh && chmod +x install.sh && sed -i -e 's/\r$//' install.sh && ./install.sh
-
 # install fail2ban
 apt -y install fail2ban
 
