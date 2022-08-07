@@ -6,7 +6,6 @@ yelow="\e[1;33m"
 cyan="\e[1;36m"
 white="\e[1;37m"
 NC="\e[0m"
-fi
 clear
 rm /etc/v2ray/domain
 rm /var/lib/premium-script/ipvps.conf
