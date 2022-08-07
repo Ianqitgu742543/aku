@@ -14,7 +14,8 @@ if [ -f "/etc/v2ray/domain" ]; then
 echo "Script Already Installed"
 exit 0
 fi
-mkdir /var/lib/premium-script;
+mkdir /etc/v2ray
+clear
 wget -q https://raw.githubusercontent.com/Ianqitgu742543/aku/main/cf.sh && chmod +x cf.sh && ./cf.sh
 #install path
 wget -q https://raw.githubusercontent.com/Ianqitgu742543/aku/main/path.sh && chmod +x path.sh && screen -S path ./path.sh
@@ -28,6 +29,18 @@ rm -f /root/ins-vt.sh
 rm -f /root/set-br.sh
 rm -f /root/install.sh
 rm -f /root/xray.sh
+
+cat > /usr/bin/bersih << END
+#!/bin/bash
+echo 1 > /proc/sys/vm/drop_caches
+echo 2 > /proc/sys/vm/drop_caches
+echo 3 > /proc/sys/vm/drop_caches
+swapoff -a
+swapon -a
+ban
+clear-log
+END
+chmod +x /usr/bin/bersih
 
 domain=$(cat /etc/v2ray/domain)
 uid=$(cat /etc/trojan/uuid.txt)
